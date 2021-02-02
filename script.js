@@ -1,11 +1,5 @@
-// let gridItems = document.createElement('div');
-// gridItems.classList.add('gridItem')
-
 const gridElement = document.querySelector('.grid');
 const gridSize = 256
-
-// console.log(gridItems)
-// gridElement.appendChild(gridItems);
 
 
 //Create multiple divs
@@ -18,4 +12,5 @@ for(let i = 0; i < gridSize; i++){
 }
 
 }
+
 divGenerate(gridSize);
