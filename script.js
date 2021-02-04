@@ -31,7 +31,3 @@ gridItems.forEach(function(gridItem){
 })
 
 
-// gridItems.forEach(function (gridItem){
-//     gridItem.addEventListener('click', changeDivColor);
-
-// })
