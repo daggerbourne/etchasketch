@@ -14,14 +14,16 @@ for(let i = 0; i < gridSize; i++){
 //Generate Divs
 divGenerate(gridSize);
 
-
+//Bind .gridItem HTML class to gridItems const
 const gridItems = document.querySelectorAll('.gridItem');
 
+//Grid Color function
 function changeDivColor(color){
     console.log(`Color Changed to ${color}`)
      this.style.backgroundColor = "red";
 }
 
+//function to apply a mouseover event on each generated div
 gridItems.forEach(function(gridItem){
     console.log('Binding gridItem');
     gridItem.addEventListener('mouseover', changeDivColor)
