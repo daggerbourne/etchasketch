@@ -25,6 +25,7 @@ function changeDivColor(color){
 gridItems.forEach(function(gridItem){
     console.log('Binding gridItem');
     gridItem.addEventListener('mouseover', changeDivColor)
+    gridItem.addEventListener('TouchEvent', changeDivColor)
 })
 
 
