@@ -1,12 +1,13 @@
 const container = document.querySelector('.container');
 const gridSize = 256
-const color = 'red'
+const color = 'blue'
 
 //Div Generator
 function divGenerate(gridSize){
 for(let i = 0; i < gridSize; i++){
     let gridItems = document.createElement('div');
     gridItems.classList.add('gridItem')
+    
     container.appendChild(gridItems);
     console.log('genreated')
 }}
@@ -20,7 +21,7 @@ const gridItems = document.querySelectorAll('.gridItem');
 //Grid Color function
 function changeDivColor(color){
     console.log(`Color Changed to ${color}`)
-     this.style.backgroundColor = "red";
+     this.style.backgroundColor = "seagreen";
 }
 
 //function to apply a mouseover event on each generated div
