@@ -2,9 +2,9 @@ body {
     margin: 2rm;
 }
 
-// the next 4 CSS selectors creats the grid and properties for even aspect ratios (squares)
+ /* the next 4 CSS selectors creats the grid and properties for even aspect ratios (squares)
 
-//Sets grid container to grid and creates basic properties
+//Sets grid container to grid and creates basic properties */
 .container {
     display: grid;
     gap: .5rem;
@@ -12,20 +12,20 @@ body {
     border: 5px solid seagreen;
 
 } 
-
-//Selects all divs within the container to set background to grey (JS handles the color changes when mouse is hovered)
+/* 
+//Selects all divs within the container to set background to grey (JS handles the color changes when mouse is hovered) */
 .container > div {
     background: rgba(0,0,0,0.1);
     border: 1px white solid;
 }
-
-//Selects all elemets within the container to use the entire width of the div (mainly used for testing with content)
+/* 
+//Selects all elemets within the container to use the entire width of the div (mainly used for testing with content) */
 .container >  * {
  width: 100%;
 
 }
 
-//Creates a phedoelement in all elements in the container to give it blank content, and padding equal to its width. Without this, only horizontal lines will appear
+/* //Creates a phedoelement in all elements in the container to give it blank content, and padding equal to its width. Without this, only horizontal lines will appear */
 .container > *::before{
     content: "";
     padding-top: 100%;
